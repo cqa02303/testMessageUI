@@ -6,6 +6,7 @@
 //  Copyright Hiroyuki-Fujikawa. 2009. All rights reserved.
 //
 
+#import <MobileCoreServices/MobileCoreServices.h>
 #import "testMessageUIViewController.h"
 
 @implementation testMessageUIViewController
@@ -80,9 +81,9 @@
 	NSLog(@"cameraAction");
 	UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
 	[imagePicker autorelease];
-	NSLog(@"sourcetype available:%d", [UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]);
 	if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]){
 		imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
+		imagePicker.mediaTypes = [NSArray arrayWithObjects:kUTTypeImage, kUTTypeMovie, nil];
 		imagePicker.allowsImageEditing = NO;
 		imagePicker.delegate = self;
 		[self presentModalViewController:imagePicker animated:YES];

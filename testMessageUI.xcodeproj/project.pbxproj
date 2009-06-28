@@ -17,6 +17,7 @@
 		28D7ACF80DDB3853001CB0EB /* testMessageUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* testMessageUIViewController.m */; };
 		8240AD480F975DBC00681D26 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8240AD470F975DBC00681D26 /* GameKit.framework */; };
 		827F1E780F8F18D1000D8F88 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 827F1E770F8F18D1000D8F88 /* MessageUI.framework */; };
+		82FBD36D0FF7665600F7F7E5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82FBD36C0FF7665600F7F7E5 /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		32CA4F630368D1EE00C91783 /* testMessageUI_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testMessageUI_Prefix.pch; sourceTree = "<group>"; };
 		8240AD470F975DBC00681D26 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		827F1E770F8F18D1000D8F88 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		82FBD36C0FF7665600F7F7E5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* testMessageUI-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "testMessageUI-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,6 +49,7 @@
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
 				827F1E780F8F18D1000D8F88 /* MessageUI.framework in Frameworks */,
 				8240AD480F975DBC00681D26 /* GameKit.framework in Frameworks */,
+				82FBD36D0FF7665600F7F7E5 /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +109,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				82FBD36C0FF7665600F7F7E5 /* MobileCoreServices.framework */,
 				8240AD470F975DBC00681D26 /* GameKit.framework */,
 				827F1E770F8F18D1000D8F88 /* MessageUI.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
@@ -214,7 +218,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "984A4795-FBC0-44B3-ADB1-8ECCBD1A572F";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2BF2421D-08DD-4C99-89DB-FBD3CB114112";
 				SDKROOT = iphoneos3.0;
 			};
 			name = Debug;
