@@ -83,7 +83,7 @@
 	[imagePicker autorelease];
 	if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]){
 		imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
-		imagePicker.mediaTypes = [NSArray arrayWithObjects:kUTTypeImage, kUTTypeMovie, nil];
+		imagePicker.mediaTypes = [NSArray arrayWithObjects:(id)kUTTypeImage, kUTTypeMovie, nil];
 		imagePicker.allowsImageEditing = NO;
 		imagePicker.delegate = self;
 		[self presentModalViewController:imagePicker animated:YES];
